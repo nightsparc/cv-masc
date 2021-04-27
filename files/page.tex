@@ -1,0 +1,30 @@
+%we use article class because we want to fully customize the page and dont use a cv template
+\documentclass[10pt,A4]{article}
+
+%----------------------------------------------------------------------------------------
+%	PAGE LAYOUT  DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+% page outer frames (debug-only)
+% \usepackage{showframe}
+
+% we use paracol to display breakable two columns
+\usepackage{paracol}
+
+% Allow breaking page layout in the middle of the document
+\usepackage{changepage}
+
+% define page styles using geometry
+\usepackage[a4paper]{geometry}
+
+% remove all possible margins
+\geometry{top=1cm, bottom=1cm, left=1cm, right=1cm}
+
+\usepackage{fancyhdr}
+\pagestyle{empty}
+
+% space between header and content
+% \setlength{\headheight}{0pt}
+
+% indentation is zero
+\setlength{\parindent}{0mm}
