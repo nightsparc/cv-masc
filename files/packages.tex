@@ -33,7 +33,7 @@
 %   ALIGNMENT
 %----------------------------------------------------------------------------------------
 
-\usepackage{ragged2e} % Enable "raggedized" environments which allow hyphenation
+\usepackage{ragged2e} % Enable "Raggedized" environments which allow hyphenation
 
 %----------------------------------------------------------------------------------------
 %	TABLE /ARRAY DEFINITIONS
@@ -43,8 +43,14 @@
 % \usepackage{multicol}
 % \usepackage{multirow}
 
+% \usepackage{tabularx}
+
 %extended aligning of tabular cells
 \usepackage{array}
+
+\newcolumntype{M}[1]{%
+    >{\raggedright\arraybackslash}m{#1}
+}%
 
 \newcolumntype{x}[1]{%
     >{\raggedleft\hspace{0pt}}p{#1}
@@ -72,7 +78,7 @@
 %   VARIOUS STUFF
 %----------------------------------------------------------------------------------------
 \usepackage{atbegshi}
-\usepackage{blindtext} % insert blind text / lorem ipsum stuff
+% \usepackage{blindtext} % insert blind text / lorem ipsum stuff
 % \usepackage{lipsum}
 % \usepackage{pdfpages}  % Allows inclusion of PDFs
 
@@ -90,4 +96,5 @@
 %	HYPERLINKS
 %----------------------------------------------------------------------------------------
 %Package for links, must be the last package used
-\usepackage[hidelinks]{hyperref}
+% \usepackage[hidelinks]{hyperref}
+\usepackage[]{hyperref}

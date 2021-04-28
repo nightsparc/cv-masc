@@ -26,8 +26,6 @@
 \setlength{\columnseprule}{4pt}
 \colseprulecolor{white}
 
-
-% LEBENSLAUF HIER
 % \newcommand*{\cvtitle}{Curriculum Vitae}
 \newcommand*{\cvtitle}{\name}
 \AtBeginShipoutFirst{\Header{\cvtitle}\Footer{}}
@@ -39,164 +37,17 @@
 \columnratio{0.33}
 \setlength{\columnsep}{2.2em}
 \setlength{\columnseprule}{4pt}
-\begin{paracol}{2}
 
+% Begin two-column paging
+\begin{paracol}{2}
+	% sidebar first
 	\begin{leftcolumn}
 		\input{files/sidebar}
 	\end{leftcolumn}
 
+	% main second
 	\begin{rightcolumn}
-	%---------------------------------------------------------------------------------------
-	%	TITLE  HEADER
-	%----------------------------------------------------------------------------------------
-
-
-	%---------------------------------------------------------------------------------------
-	%	PROFILE
-	%----------------------------------------------------------------------------------------
-	\cvsection{Profile + Status}
-	\vspace{4pt}
-
-
-	\icontext{CaretRight}{12}{\birthday}{black}\\[4pt]
-	\cvtext{Lead Software Architect}
-
-	\cvtext{Software Engineer}
-
-	\cvtext{PhD candidate}
-
-	\cvsection{Biography}
-	\vspace{4pt}
-
-	\cvtext{\Blindtext[1]
-
-
-
-
-	}
-
-
-	%---------------------------------------------------------------------------------------
-	%	WORK EXPERIENCE
-	%----------------------------------------------------------------------------------------
-
-	\vspace{10pt}
-	\cvsection{Work experience}
-	\vspace{4pt}
-
-
-	\cvevent
-	{XX/XXXX - today}
-		{Research assistant | PhD student}
-		{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-		{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-		\vfill\null
-
-
-	\cvevent
-	{XX/XXXX - XX/XXXX}
-		{Part-time research assistant}
-		{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-		{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-		\vfill\null
-
-
-
-	\cvevent
-	{XX/XXXX - XX/XXXX}
-		{Trainer - Course name}
-		{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-		{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-		\vfill\null
-
-
-
-	\cvevent
-		{XX/XXXX - XX/XXXX}
-		{Trainer - Course name}
-		{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-		{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of ","  is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-		\vfill\null
-		\vfill\null
-
-
-
-	\cvevent
-	{XX/XXXX - XX/XXXX}
-		{Trainer - Course name}
-		{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-		{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-		\vfill\null
-
-
-	\cvevent
-	{XX/XXXX - XX/XXXX}
-		{Part-time research assistant}
-		{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-		{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-		\vfill\null
-
-
-
-	\cvevent
-	{XX/XXXX - XX/XXXX}
-		{Internship}
-		{Department \newline Company name (Location)}
-		{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-		\vfill\null
-
-	\cvevent
-	{XX/XXXX - XX/XXXX}
-		{Student assistant}
-		{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-		{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-		\vfill\null
-
-
-	\cvevent
-	{XX/XXXX - XX/XXXX}
-		{Trainer - Course name}
-		{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-		{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-		\vfill\null
-
-
-
-	\cvevent
-	{XX/XXXX - XX/XXXX}
-		{Working student}
-		{Department \newline Company name (Location)}
-		{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-		\vfill\null
-
-
-	\cvsection{Publications}
-
-	\begin{itemize}[leftmargin=*]
-	\item Author, G. \& Author, P. \&  Author G. (2020). "This is the title of the publication". In: \textit{Proceedings of the 28th Conference on Lipsum (LIPSUM)}, Lipsum, June 12-17, 2020.
-	\item Author, G. \& Author, P. \&  Author G. (2020). "This is the title of the publication". In: \textit{Proceedings of the 28th Conference on Lipsum (LIPSUM)}, Lipsum, June 12-17, 2020.
-	\item Author, G. \& Author, P. \&  Author G. (2020). "This is the title of the publication". In: \textit{Proceedings of the 28th Conference on Lipsum (LIPSUM)}, Lipsum, June 12-17, 2020.
-	\end{itemize}
-	% hofixes to create fake-space to ensure the whole height is used
-	\mbox{}
-	\vfill
-	\mbox{}
-	\vfill
-	\mbox{}
-	\vfill
-	\mbox{}
-	\vfill
-	\mbox{}
-	\vfill
-	\mbox{}
-	\vfill
-	\mbox{}
-
-
-	Lorem, \today     \hspace{1cm}   \hrulefill
-
-	\hspace*{30mm}\phantom{Lorem, \today }\name
-
+		\input{files/main}
 	\end{rightcolumn}
 \end{paracol}
 

@@ -43,6 +43,11 @@
 		\parbox{0.8\mpwidth}{#1}
 	\end{tabular*}
 }
+\newcommand{\cvfreetext}[1] {
+	\begin{tabular*}{0.8\mpwidth}{p{0.8\mpwidth}}
+		#1
+	\end{tabular*}
+}
 %----------------------------------------------------------------------------------------
 %	CV SECTION
 %----------------------------------------------------------------------------------------
@@ -89,7 +94,7 @@
 % param 2: level (for example in years)
 % param 3: percent, values range from 0 to 1
 \newcommand{\cvskill}[3] {
-	\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
+	\begin{tabular*}{1\mpwidth}{M{0.72\mpwidth} w{r}{0.28\mpwidth}}
  		\textcolor{black}{\textbf{#1}} & \textcolor{maincol}{#2}\\
 	\end{tabular*}%
 
@@ -105,7 +110,7 @@
 %	 CV EVENT
 %----------------------------------------------------------------------------------------
 
-% Renders a table and a paragraph (cvtext) wrapped in a parbox (to ensure minimum content
+% Renders a table and a paragraph (\cvtext) wrapped in a parbox (to ensure minimum content
 % is glued together when a pagebreak appears).
 % Additional Information can be passed in text or list form (or other environments).
 % the work you did
@@ -121,16 +126,22 @@
 	% we wrap this part in a parbox, so title and description are not separated on a pagebreak
 	% if you need more control on page breaks, remove the parbox
 	\parbox{\mpwidth}{
-		\begin{tabular*}{1\mpwidth}{p{0.66\mpwidth}  r}
-	 		\textcolor{black}{\textbf{#2}} & \colorbox{accentcol}{\makebox[0.32\mpwidth]{\textcolor{white}{\textbf{#1}}}} \\
-			\textcolor{maincol}{#3} & \\
+		\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
+	 		\textcolor{black}{\textbf{#2}} & \colorbox{accentcol}{\makebox[0.25\mpwidth]{\textcolor{white}{\textbf{#1}}}} \\
+			\textcolor{maincol}{\textbf{#3}} & \\
 		\end{tabular*}\\[8pt]
 
 		\ifthenelse{\isempty{#4}}{}{
 			\cvtext{#4}\\
 		}
 	}
-	\vspace{14pt}
+
+	\ifthenelse{\isempty{#5}}{}{
+		\vspace{9pt}
+		{#5}
+	}
+
+	\vspace{3pt}
 }
 
 
